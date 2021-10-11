@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    background: #B9B0AE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+.wrapper {
+    width: 1024px;
+    height: 600px;
+    margin: auto;
+}
+
+#header {
+    font-size: 62px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#textarea {
+    width: 700px;
+    height: 130px;
+    margin: 5px 160px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 5px solid grey;
+    border-radius: 15px;
+    font-size: medium;
+    resize: none;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 1000px;
+    height: 280px;
+    padding: 5px;
+    margin: 0 auto;
+    border: 5px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.key {
+    height: 40px;
+    line-height: 40px;
+    margin: 4px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: 3px solid grey;
+    animation-name: none;
+    animation-duration: 200ms;
+}
+.key:hover {
+    background-color: #000;
+    opacity: 0.5;
+}
+
+#about {
+    padding: 10px 20px 0 40px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+@keyframes active-btn {
+    0% {
+        border-radius: 0px;
+    }
+    100% {
+        border-radius: 20%;
+        background-color: grey;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.Delete,
+.Backspace,
+.MetaLeft,
+.Tab, 
+.CapsLock, 
+.Enter,
+.ShiftLeft, .ShiftRight, 
+.ControlLeft, .ControlRight,
+.AltLeft, .AltRight  {
+    padding: 0 2px;
+    text-transform: capitalize;
+}
+.Backspace,
+.ArrowUp, .ArrowDown, .ArrowLeft, .ArrowRight {
+    font-size: 32px;
+    font-weight: 900;
+}
+.CapsLock  {
+    flex-basis: 116px;
+}
+.Tab {
+    flex-basis: 84px;
+}
+.Enter {
+    padding: 0 30px;
+}
+.ShiftLeft {
+    flex-basis: 150px;
+} 
+.ShiftRight {
+    flex-basis: 48px;
+}
+.ControlLeft, .ControlRight {
+    flex-basis: 80px;
+}
+.AltLeft, .AltRight {
+    flex-basis: 70px;
+}
+.Space {
+    flex-basis: 304px;
+}
