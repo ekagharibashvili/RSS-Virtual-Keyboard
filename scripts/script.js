@@ -73,7 +73,7 @@ function addStyleToDocument(fileName) {
   head.appendChild(link);
 }
 
-function init() {
+function initDom() {
   let wrapper = document.createElement('div');
   let header = document.createElement('h1');
   let textarea = document.createElement('textarea');
@@ -99,7 +99,7 @@ function init() {
 
   initKeyboard(LANGUAGE.getLanguageLocalStorage());
 }
-init();
+initDom();
 
 function initKeyboard(keyboardLayout) {
   const KEYBOARD = document.querySelector('#keyboard');
